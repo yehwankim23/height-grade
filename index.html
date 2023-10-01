@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <title>키 등급 계산기</title>
+    <link rel="icon" href="images/icon.png" />
+    <link href="style.css" rel="stylesheet" />
+    <script
+      src="https://t1.kakaocdn.net/kakao_js_sdk/2.4.0/kakao.min.js"
+      integrity="sha384-mXVrIX2T/Kszp6Z0aEWaA8Nm7J6/ZeWXbL8UpGRjKwWe56Srd/iyNmWMBhcItAjH"
+      crossorigin="anonymous"
+    ></script>
+    <script src="scripts/data.js"></script>
+    <script src="scripts/script.js" defer></script>
+  </head>
+  <body>
+    <div class="m-a w-100 jc-fs">
+      <div class="mt-20 w-80 h-10 ff-gsb fs-8">키 등급 계산기</div>
+      <div class="mt-20 w-80">
+        <form>
+          <div class="w-80 h-10 fd-r">
+            <button id="male" class="w-35 h-10" type="button">남자</button>
+            <button id="female" class="ml-10 w-35 h-10 bc-lightgray" type="button">여자</button>
+          </div>
+          <input
+            id="age"
+            class="mt-5 bb-lightgray w-80 h-10"
+            type="number"
+            inputmode="numeric"
+            min="19"
+            max="64"
+            placeholder="만 나이"
+            required
+          />
+          <input
+            id="height"
+            class="mt-5 bb-lightgray w-80 h-10"
+            type="number"
+            inputmode="decimal"
+            min="1"
+            max="300"
+            step="any"
+            placeholder="키 (cm)"
+            required
+          />
+          <button class="mt-10 w-80 h-10" type="submit">등급 확인하기</button>
+        </form>
+      </div>
+      <div id="result-shadow" class="d-n p-a t-0 l-0 w-100w h-150h bc-black-0-9 jc-fs">
+        <div id="result" class="mt-50 br-5 w-80 h-80 jc-fs">
+          <div id="close-result" class="ml-70 w-10 h-10 c-lightgray c-p">&times;</div>
+          <div id="grade" class="w-80 h-20 ff-gsb fs-16"></div>
+          <img id="emoji" class="w-30 h-30" alt="등급 이모티콘" />
+          <div id="details" class="mt-5 bt-lightgray w-60 h-10 c-lightgray"></div>
+        </div>
+        <img id="share" class="mt-10 br-2 w-10 h-10 c-p" src="images/kakao.png" alt="공유하기" />
+      </div>
+      <div id="open-how" class="mt-5 w-40 h-10 c-lightgray c-p">등급 산출 방법</div>
+      <div id="how-shadow" class="d-n p-a t-0 l-0 w-100w h-150h bc-black-0-9 jc-fs">
+        <div id="how" class="mt-50 br-5 w-80 h-80 bc-white c-black jc-fs">
+          <div id="close-how" class="ml-70 w-10 h-10 c-p">&times;</div>
+          <div class="w-80 h-5">통계 출처</div>
+          <div class="w-80 h-10">
+            <a
+              class="c-black"
+              href="https://kosis.kr/statHtml/statHtml.do?orgId=113&tblId=DT_113_STBL_1020274"
+              target="_blank"
+              ><u>문화체육관광부 국민체력측정통계</u></a
+            >
+          </div>
+          <div class="mt-5 w-60 h-5 fd-r">
+            <div class="w-20 h-5">1등급</div>
+            <div class="w-20 h-5">2등급</div>
+            <div class="w-20 h-5">3등급</div>
+          </div>
+          <div class="w-60 h-5 fd-r">
+            <div class="w-20 h-5">상위 4%</div>
+            <div class="w-20 h-5">상위 11%</div>
+            <div class="w-20 h-5">상위 23%</div>
+          </div>
+          <div class="mt-5 w-60 h-5 fd-r">
+            <div class="w-20 h-5">4등급</div>
+            <div class="w-20 h-5">5등급</div>
+            <div class="w-20 h-5">6등급</div>
+          </div>
+          <div class="w-60 h-5 fd-r">
+            <div class="w-20 h-5">상위 40%</div>
+            <div class="w-20 h-5">상위 60%</div>
+            <div class="w-20 h-5">상위 77%</div>
+          </div>
+          <div class="mt-5 w-60 h-5 fd-r">
+            <div class="w-20 h-5">7등급</div>
+            <div class="w-20 h-5">8등급</div>
+            <div class="w-20 h-5">9등급</div>
+          </div>
+          <div class="w-60 h-5 fd-r">
+            <div class="w-20 h-5">상위 89%</div>
+            <div class="w-20 h-5">상위 96%</div>
+            <div class="w-20 h-5">상위 100%</div>
+          </div>
+        </div>
+      </div>
+      <div class="mt-5 w-80 h-10 fs-2">
+        <a href="https://github.com/yehwankim23/height-grade" target="_blank">
+          &copy; 2023 김예환 Ye-Hwan Kim (Sam)
+        </a>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,245 @@
+@font-face {
+  font-family: "Gmarket Sans Bold";
+  src: url("fonts/GmarketSansTTFBold.ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Noto Sans KR";
+  src: url("fonts/NotoSansKR-Regular.ttf");
+  font-display: swap;
+}
+
+body {
+  margin: 0;
+  background-color: royalblue;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 4vmin;
+  color: white;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  touch-action: manipulation;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+input,
+button {
+  border: none;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 4vmin;
+}
+
+input {
+  border-radius: 0;
+  padding: 0;
+  background-color: royalblue;
+  color: white;
+  text-align: center;
+}
+
+input::placeholder {
+  color: lightgray;
+}
+
+button {
+  border-radius: 5vmin;
+  background-color: white;
+  font-weight: normal;
+  color: royalblue;
+  cursor: pointer;
+}
+
+a {
+  color: lightgray;
+  text-decoration: none;
+}
+
+u {
+  text-underline-offset: 1vmin;
+}
+
+.d-n {
+  display: none;
+}
+
+.p-a {
+  position: absolute;
+}
+
+.t-0 {
+  top: 0;
+}
+
+.t-50 {
+  top: 50vmin;
+}
+
+.l-0 {
+  left: 0;
+}
+
+.l-10 {
+  left: 10vmin;
+}
+
+.m-a {
+  margin: auto;
+}
+
+.mt-5 {
+  margin-top: 5vmin;
+}
+
+.mt-10 {
+  margin-top: 10vmin;
+}
+
+.mt-20 {
+  margin-top: 20vmin;
+}
+
+.mt-50 {
+  margin-top: 50vmin;
+}
+
+.ml-10 {
+  margin-left: 10vmin;
+}
+
+.ml-70 {
+  margin-left: 70vmin;
+}
+
+.bt-lightgray {
+  border-top: 1px solid lightgray;
+}
+
+.bb-lightgray {
+  border-bottom: 1px solid lightgray;
+}
+
+.br-2 {
+  border-radius: 2vmin;
+}
+
+.br-5 {
+  border-radius: 5vmin;
+}
+
+.w-10 {
+  width: 10vmin;
+}
+
+.w-20 {
+  width: 20vmin;
+}
+
+.w-30 {
+  width: 30vmin;
+}
+
+.w-35 {
+  width: 35vmin;
+}
+
+.w-40 {
+  width: 40vmin;
+}
+
+.w-60 {
+  width: 60vmin;
+}
+
+.w-80 {
+  width: 80vmin;
+}
+
+.w-100 {
+  width: 100vmin;
+}
+
+.w-100w {
+  width: 100vw;
+}
+
+.h-5 {
+  height: 5vmin;
+}
+
+.h-10 {
+  height: 10vmin;
+}
+
+.h-20 {
+  height: 20vmin;
+}
+
+.h-30 {
+  height: 30vmin;
+}
+
+.h-80 {
+  height: 80vmin;
+}
+
+.h-150h {
+  height: 150vh;
+}
+
+.bc-black-0-9 {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.bc-lightgray {
+  background-color: lightgray;
+}
+
+.bc-white {
+  background-color: white;
+}
+
+.ff-gsb {
+  font-family: "Gmarket Sans Bold", sans-serif;
+}
+
+.fs-2 {
+  font-size: 2vmin;
+}
+
+.fs-8 {
+  font-size: 8vmin;
+}
+
+.fs-16 {
+  font-size: 16vmin;
+}
+
+.c-black {
+  color: black;
+}
+
+.c-lightgray {
+  color: lightgray;
+}
+
+.fd-r {
+  flex-direction: row;
+}
+
+.jc-fs {
+  justify-content: flex-start;
+}
+
+.c-p {
+  cursor: pointer;
+}
